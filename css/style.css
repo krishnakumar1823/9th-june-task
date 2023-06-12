@@ -5,6 +5,7 @@
 } 
 .gs-hvr{
 	border:2px solid #5c9f24;
+	border-radius:7px;
 }
 .gs-hvr:hover{
 	background-color:#5c9f24;
@@ -42,23 +43,23 @@
 }
 .sec1-img{
 	background:linear-gradient(#0000004a,#00000038), url(../image/slide-1.jpg);
-	background-size:auto;
-	background-position:center;
-	background-repeat:no-repeat;
+	background-size:cover !important;
+	background-position:center !important;
+	background-repeat:no-repeat !important;
 	height:80vh;
 }
 .sec2-img{
 	background:linear-gradient(#0000004a,#00000038), url(../image/slide-2.jpg);
-	background-size:auto;
-	background-position:bottom;
-	background-repeat:no-repeat;
+	background-size:cover !important;
+	background-position:bottom !important;
+	background-repeat:no-repeat !important;
 	height:80vh;
 }
 .sec3-img{
 	background:linear-gradient(#0000004a,#00000038), url(../image/slide-3.jpg);
-	background-size:auto;
-	background-position:bottom;
-	background-repeat:no-repeat;
+	background-size:cover !important;
+	background-position:bottom !important;
+	background-repeat:no-repeat !important;
 	height:80vh;
 }
 .read-btn:hover{
@@ -70,72 +71,6 @@
 .row{
 	margin-right:0% !important;
     margin-left: 0% !important;
-}
-
-.sec1-content h1{
-	color:white;
-	animation-name:sec-down-up-0;
-	animation-duration:5s;
-	animation-delay: 1s;
-	animation-iteration-count: infinite;
-	padding-top:150px;
-}
-@keyframes sec-down-up-0{
-	0%{
-		transform:translateY(-50px); 
-		transition:all.5s ease-in-out;
-		opacity:0;
-	}
-	100%{
-		transform:translateY(0px);
-		transition:all.5s ease-in-out;
-		opacity:1;
-	}
-}
-.sec1-content p{
-	color:white;
-	animation-name:sec-down-up;
-	animation-duration:5s;
-	animation-delay: 1s;
-	animation-iteration-count: infinite;
-	padding-top:20px;
-}
-@keyframes sec-down-up{
-	0%{
-		transform:translateY(100px); 
-		transition:all.5s ease-in-out;
-		opacity:0;
-	}
-	100%{
-		transform:translateY(0px);
-		transition:all.5s ease-in-out;
-		opacity:1;
-	}
-}
-.sec1-content a{
-	animation-name:sec-down-up-1;
-	animation-duration:5s;
-	animation-delay: 1s;
-	animation-iteration-count: infinite;
-	background-color:#5c9f24;
-	padding:10px 25px;
-	display:inline-block;	
-} 
-@keyframes sec-down-up-1{
-	0%{
-		transform:translateY(100px); 
-		transition:all.5s ease-in-out;
-		opacity:0;
-	}
-	100%{
-		transform:translateY(0px);
-		transition:all.5s ease-in-out;
-		opacity:1;
-	}
-}
-.img-fluid{
-    width: 100% !important;
-    height: 450px !important;
 }
 .filter img{
 	filter:grayscale(100%);
@@ -309,7 +244,7 @@
 	transition:all .4s ease;
 }
 .footer-cnt-form{
-	width:80%;
+	width:100%;
 	position:relative;
 }
 .footer-cnt-form .input-field-footer{
@@ -322,7 +257,7 @@
 	position:absolute;
 	bottom:0;
 	right:0;
-	padding:16px 20px;
+	padding:16px 40px;
 	text-decoration:none;
 	color:green !important;
 	background-color:#5fcf80; 

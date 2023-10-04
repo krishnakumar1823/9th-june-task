@@ -67,7 +67,7 @@
 	}
 	.nav-item-hvr:hover a{
 		color:#5c9f24 !important;
-		letter-spacing:5px;
+		letter-spacing:1px;
 		transition:all .3s ease-in-out;
 	}
 }

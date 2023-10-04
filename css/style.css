@@ -3,6 +3,13 @@
 	padding:0;
 	box-sizing:border-box;
 } 
+
+#About,#Services,#Portfolio,#Team,#Blog,#Contact{
+	padding-top: 30px;
+}
+.nav-item a{
+	font-size: 15px;
+}
 .gs-hvr{
 	border:2px solid #5c9f24;
 	border-radius:7px;
@@ -250,16 +257,17 @@
 .footer-cnt-form .input-field-footer{
 	padding:15px;
 	border:1px solid black;
-	border-radius:22px; 
+	border-radius:6px; 
 	width:100%;
 }
 .footer-cnt-form a{
 	position:absolute;
-	bottom:0;
+	top: 1px;
+	bottom:1px;
 	right:0;
-	padding:16px 40px;
+	padding:14px 30px;
 	text-decoration:none;
-	color:green !important;
-	background-color:#5fcf80; 
-	border-radius:22px;
+	color:white !important;
+	background-color:#5c9f24; 
+	border-radius:6px;
 }

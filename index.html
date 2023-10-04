@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>9th-june-task</title>	
+	<title>Groovin</title>	
 	<link rel="stylesheet" href="css/style.css">
 	<link rel="stylesheet" href="css/responsive.css">
 	<link rel="stylesheet" href="css/bootstrap.min.css">
@@ -15,7 +15,7 @@
 		<header>
 			<div class="row">
 				<nav class="navbar navbar-expand-lg navbar-dark head-bg">
-				  <div class="container-fluid py-2">
+				  <div class="container-fluid">
 					<a class="navbar-brand text-uppercase fw-bolder col-3" href="#">groovin</a>				<!---->
 					<div class="collapse navbar-collapse col-7" id="navbarSupportedContent">
 					  <ul class="navbar-nav mb-2 mb-lg-0 col-10 justify-content-evenly">
@@ -64,10 +64,10 @@
 					</div>
 				  </div>
 				  
-				  
-				  <nav class="navbar bg-body-tertiary" style="display:flex;justify-content:flex-end;position:fixed;right:30px;top:10px !important;">					  
+			
+				  <nav class="navbar bg-body-tertiary" style="display:flex;justify-content:flex-end;position:fixed;right:30px;top:5px !important;">					  
 						<button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
-						  <span class="navbar-toggler-icon"></span>
+						  <span class="navbar-toggler-icon" style="font-size: 15px;"></span>
 						</button>
 						<div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
 						  <div class="offcanvas-header">
@@ -77,22 +77,22 @@
 						  <div class="offcanvas-body">
 							<ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
 							  <li class="nav-item nav-item-hvr">
-						  <a class="nav-link active text-uppercase text-dark text-center" aria-current="page" href="#Home">Home</a>
+						  <a class="nav-link active text-uppercase text-dark text-center" aria-current="page" onclick="closeNav()" href="#Home">Home</a>
 						</li>
 						<li class="nav-item nav-item-hvr">
-						  <a class="nav-link text-uppercase text-dark text-center" href="#About">About</a>
+						  <a class="nav-link text-uppercase text-dark text-center" onclick="closeNav()" href="#About">About</a>
 						</li>
 						<li class="nav-item nav-item-hvr">
-						  <a class="nav-link text-uppercase text-dark text-center" href="#Services">Services</a>
+						  <a class="nav-link text-uppercase text-dark text-center" onclick="closeNav()" href="#Services">Services</a>
 						</li>
 						<li class="nav-item nav-item-hvr">
-						  <a class="nav-link text-uppercase text-dark text-center" href="#Portfolio">Portfolio</a>
+						  <a class="nav-link text-uppercase text-dark text-center" onclick="closeNav()" href="#Portfolio">Portfolio</a>
 						</li>
 						<li class="nav-item nav-item-hvr">
-						  <a class="nav-link text-uppercase text-dark text-center" href="#Team">Team</a>
+						  <a class="nav-link text-uppercase text-dark text-center" onclick="closeNav()" href="#Team">Team</a>
 						</li>
 						<li class="nav-item nav-item-hvr">
-						  <a class="nav-link text-uppercase text-dark text-center" href="#Blog">Blog</a>
+						  <a class="nav-link text-uppercase text-dark text-center" onclick="closeNav()" href="#Blog">Blog</a>
 						</li>					
 						<li class="nav-item dropdown drp-hvr nav-item-hvr">
 							<div class="drop-relative text-center">
@@ -108,7 +108,7 @@
 						  </div>
 						</li>
 						<li class="nav-item nav-item-hvr">
-						  <a class="nav-link text-uppercase text-dark text-center" href="#Contact">Contact</a>
+						  <a class="nav-link text-uppercase text-dark text-center" onclick="closeNav()" href="#Contact">Contact</a>
 						</li>
 							</ul>							
 						  </div>
@@ -144,10 +144,10 @@
 	</section>
 	
 	<!--section-2-->
-	<section class="mt-5" id="About">
+	<section id="About">
 		<div class="container">
 			<div class="card border-0">
-			  <div class="row">
+			  <div class="row pt-5">
 				<div class="col-md-12 col-lg-5">
 					<img src="image/about.jpg" class="img-fluid rounded-start" >
 				</div>
@@ -199,7 +199,7 @@
 	</section>		
 	
 	<!--section-3-->
-	<section class="mt-5" id="About">
+	<section class="mt-5">
 		<div class="container">
 			<div class="card border-0">
 				<div class="row">
@@ -245,7 +245,7 @@
 	</section>		
 	
 	<!--section-3-->
-	<section class="mt-5 sec3-bg" id="About">
+	<section class="mt-5 sec3-bg">
 		<div class="container">
 			<div class="row container-fluid py-4">
 				<div class="sec-3-img filter d-flex justify-content-center col-6 col-md-4 py-4 col-lg-2">
@@ -995,9 +995,29 @@
 			</div>
 		</div>
 	</footer>
+
+
+<script>
+	function closeNav(){
+		var offcanvasNavbar=document.getElementById("offcanvasNavbar")
+		offcanvasNavbar.setAttribute("class","offcanvas offcanvas-end")
+		offcanvasNavbar.setAttribute("style","visibility:hidden")
+		offcanvasNavbar.removeAttribute("role")
+		offcanvasNavbar.removeAttribute("aria-modal")
+		offcanvasNavbar.setAttribute("aria-hidden","true")
+
+		var bodyy=document.getElementsByTagName("body")[0]
+		bodyy.removeAttribute("style")
+
+		var modal_backdrop=document.getElementsByClassName("modal-backdrop")[0] 
+		modal_backdrop.outerHTML="" 
+	}
+</script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
 <script src="owl/owl.carousel.min.js"></script>
 <script src="owl/script.js"></script>
 <script src="js/bootstrap.bundle.min.js"></script>
+
+
 </body>
 </html>
